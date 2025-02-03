@@ -1,0 +1,138 @@
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: "Pixelated MS Sans Serif",Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #54A8A8;
+    font-size: 15px;
+    position: relative;
+  }
+
+  #login-form,
+  #welcome {
+    position: fixed; 
+    top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 350px;
+    height: 138px;
+}
+
+.bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #c0c0c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 3px;
+    box-sizing: border-box;
+}
+
+.bar__start__btn {
+    font-size: 15px;
+}
+
+#clock {
+    display: flex;
+
+}
+
+.bar_clock {
+    box-shadow: 0 2px white, 0 -2px #7d7d7d, -2px -2px #7d7d7d, 2px 2px white, -2px 2px #7d7d7d, 2px -2px white;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    
+#login-form {
+    width: 350px;
+    height: 138px;
+
+}
+
+.login-input {
+    width: 100%
+}
+
+.warning {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.warning_icon {
+    width: 35px;
+    height: 35px;
+}
+
+.warning_text {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.input_submit {
+    height: 30px;
+}
+.input_submit {
+    margin: 5px 120px;
+}
+
+#greeting {
+    color:purple
+}
+
+
+.weather_clock {
+    display: flex;
+}
+
+#weather {
+    margin-right: 10px;
+}
+
+.todo-main {
+    float: right;
+}
+
+.icons {
+    float:left;
+}
+
+.icons img {
+    width: 50px;
+}
+
+.icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 7px;
+}
+
+#welcome .tree-view {
+    height: 200px;
+}
+
+#welcome li {
+    text-align: center;
+    font-size: 25px;
+}
+
+#quote {
+    font-weight: 900;
+}
+
+.hihi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

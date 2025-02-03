@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <div class="window hidden" id="login-form">
+      <div class="title-bar">
+        <div class="title-bar-text">Warning</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <form class="login">
+          <div class="warning">
+            <img src="img/warning.png" class="warning_icon" />
+            <span class="warning_text"> unregistered user</span>
+          </div>
+          <input
+            class="login-input"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <input type="submit" value="Log In" class="input_submit" />
+        </form>
+      </div>
+    </div>
+    <div class="hidden" id="box"></div>
+
+    <div class="hidden icons">
+      <div>
+        <img src="img/mycomputer.png" />
+        <span>Computer</span>
+      </div>
+      <div>
+        <img src="img/internet explorer.png" />
+        <span>Internet explorer</span>
+      </div>
+    </div>
+
+    <div class="todo-main hidden">
+      <div class="title-bar">
+        <div class="title-bar-text">A Title Bar</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="hidden" id="notodo">
+        <ul id="todo-list" class="tree-view"></ul>
+      </div>
+      <form id="todo-form">
+        <input type="text" placeholder="Write a to-do..." required />
+        <button>Add</button>
+      </form>
+    </div>
+
+    <div class="hidden" id="welcome">
+      <div class="title-bar">
+        <div class="title-bar-text">Welcome</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <ul class="tree-view hihi">
+        <li>Welcome</li>
+        <li>
+          <strong id="greeting" style="color: purple"></strong>
+        </li>
+        <li>Have a good day!</li>
+      </ul>
+    </div>
+    <div class="bar">
+      <div class="bar__start">
+        <button class="bar__start__btn">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAOCAYAAAAmL5yKAAAABHNCSVQICAgIfAhkiAAAAH1JREFUKJGNU1sOwCAIs2T3v3L34Zg81SZmgrQUt2HcgSFG2lwSIyCbIqZNlqQUR2zJRVKGH+NkOUG4SAjrRx9MB9qa+jSi9S2bpMCEbEdYaYYKzBSqRvRkOAFlmLegR2Tu00N89464SqJXfB43I+zxBIIK9haC+OkjOv4rL/ixLwbYUW19AAAAAElFTkSuQmCC"
+            class="bar-start-icon"
+          />
+          <span class="bar__start__text">Start</span>
+        </button>
+      </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="weather_clock">
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="bar_clock">
+          <span id="clock">00시00분00초</span>
+        </div>
+      </div>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
